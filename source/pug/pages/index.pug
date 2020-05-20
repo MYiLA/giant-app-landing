@@ -4,26 +4,33 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title ESSEC
-    //- link(rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous")
-    link(rel="stylesheet", href="lib/css-awesome/all.min.css")
-    link(rel="stylesheet", href="lib/css-awesome/brands.css")
-    link(rel="stylesheet" href="lib/glide/glide.core.min.css")
+    meta(name="description" content="Тестовое задание на должность 'Frontend-разработчик / Верстальщик' в компанию 'Крайт'")
+    title GIANT
+    link(rel="stylesheet", href="lib/fontawesome-5.13.0/css/all.min.css")
+    //- link(rel="stylesheet" href="lib/glide/glide.core.min.css")
     link(rel="stylesheet" href="css/style.min.css")
+    link(rel="icon" href="img/favicon.ico" type="image/x-icon")
 
   body
-
-    main.home-page.update-02-2020
-      .home-page__hover(style="background-image: url(img/home-hover.jpg)")
-        .wrap
-          h1.home-page__hover-title Study online with ESSEC Augmented Digital Campus
-          a.home-page__hover-btn(href="programmes-page.html") Explore our online courses now
-      .wrap
-        section.home-page__advantage.advantage
-          //- include ../modules/advantage
-
-
-    //- include ../modules/footer
+    include ../modules/header
+    main.main
+      section.main__hover.hover
+        include ../modules/hover
+      section.main__features.features
+        include ../modules/features
+      section.main__app-info.app-info
+        include ../modules/app-info
+      section.main__screenshots.screenshots
+        include ../modules/screenshots
+      section.main__pricing.pricing
+        include ../modules/pricing
+      section.main__video.video
+        include ../modules/video
+      section.main__reviews.reviews
+        include ../modules/reviews
+      section.main__download.download
+        include ../modules/download
+    include ../modules/footer
 
     script(src="js/polyfill.min.js")
     script(src="js/script.js" defer)
