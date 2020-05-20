@@ -1,2 +1,39 @@
-i.fa.fa-long-arrow-alt-right
-i.fa.fa-long-arrow-alt-left
+.reviews__title What our customers are saying
+.reviews__desc Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+.reviews__slider
+  .reviews__glide.glide
+    .glide__track(data-glide-el="track")
+      ul.glide__slides
+        li.glide__slide
+          .reviews__slide.slide-review
+            p.slide-review__desc The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
+            figure.slide-review__author.author
+              .author__img-wrap
+                img(src="./img/reviews/alexandra-bullock.jpg" alt="Alexandra Bullock's review of the app 'Giant'")
+              figcaption.author__wrap
+                h3.author__name Alexandra Bullock
+                p.author__desc Apple Inc.
+        li.glide__slide
+          .reviews__slide.slide-review
+            p.slide-review__desc Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
+            figure.slide-review__author.author
+              .author__img-wrap
+                img(src="./img/reviews/gary-sebastian.jpg" alt="Gary Sebastian's review of the app 'Giant'")
+              figcaption.author__wrap
+                h3.author__name Gary Sebastian
+                p.author__desc Apple Inc.
+        li.glide__slide
+          .reviews__slide.slide-review
+            p.slide-review__desc Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
+            figure.slide-review__author.author
+              .author__img-wrap
+                img(src="./img/reviews/samantha-bilbau.jpg" alt="Samantha Bilbau's review of the app 'Giant'")
+              figcaption.author__wrap
+                h3.author__name Samantha Bilbau
+                p.author__desc Apple Inc.
+
+    .reviews__arrow-wrap.glide__arrows(data-glide-el="controls")
+      button.reviews__arrow.reviews__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="last review" data-glide-dir="<")
+        i.fa.fa-long-arrow-alt-left
+      button.reviews__arrow.reviews__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="next review" data-glide-dir=">")
+        i.fa.fa-long-arrow-alt-right

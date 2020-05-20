@@ -29,13 +29,6 @@ gulp.task('js', () => {
     .pipe(gulp.dest('build/js'))
 });
 
-gulp.task('copy-polyfill', () => {
-  return gulp.src('node_modules/@babel/polyfill/dist/polyfill.min.js')
-    .pipe(gulp.dest('build/js/'));
-});
-
-
-
 gulp.task('clean', () => {
   return del('build', 'temp');
 });
@@ -143,7 +136,6 @@ gulp.task('build', gulp.series(
   'clean',
   'copy',
   'js',
-  'copy-polyfill',
   'css',
   'sprite',
   'html'
