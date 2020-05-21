@@ -1,11 +1,13 @@
 $font-main: "Roboto", sans-serif;
+$font-accent: "Dosis", sans-serif;
 $mobile-width: 320px;
 $tablet-width: 600px;
 $desktop-width: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
-$white: rgb(255, 255, 255);
-$black: rgb(0, 0, 0);
+$white: #ffffff;
+$black: #222222;
+$gray: #777777;
 $gradient: linear-gradient(
   45deg,
   rgb(253, 113, 44) 0%,
