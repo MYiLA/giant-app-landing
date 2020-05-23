@@ -6,31 +6,33 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     meta(name="description" content="Тестовое задание на должность 'Frontend-разработчик / Верстальщик' в компанию 'Крайт'")
     title GIANT
-    link(rel="stylesheet", href="lib/fontawesome-5.13.0/css/all.min.css")
-    link(rel="stylesheet" href="lib/glide/glide.core.min.css")
-    link(rel="stylesheet" href="css/style.min.css")
+    link(rel="stylesheet", href="./lib/bootstrap-4.5.0/css/bootstrap-grid.min.css")
+    link(rel="stylesheet", href="./lib/fontawesome-5.13.0/css/all.min.css")
+    link(rel="stylesheet" href="./lib/glide/glide.core.min.css")
+    link(rel="stylesheet" href="./css/style.min.css")
     link(rel="icon" href="img/favicon.ico" type="image/x-icon")
 
   body(id="home")
-    include ../modules/header
-    main.main
-      section.main__hover.hover
-        include ../modules/hover
-      section.main__features.features(id="features")
-        include ../modules/features
-      section.main__app-info.app-info
-        include ../modules/app-info
-      section.main__screenshots.screenshots
-        include ../modules/screenshots
-      section.main__pricing.pricing(id="pricing")
-        include ../modules/pricing
-      section.main__video.video
-        include ../modules/video
-      section.main__reviews.reviews
-        include ../modules/reviews
-      section.main__download.download(id="download")
-        include ../modules/download
-    include ../modules/footer
+    .wrap
+      include ../modules/header
+      main.main
+        section.main__hover.hover.row
+          include ../modules/hover
+        section.main__features.features(id="features")
+          include ../modules/features
+        section.main__app-info.app-info.row
+          include ../modules/app-info
+        section.main__screenshots.screenshots
+          include ../modules/screenshots
+        section.main__pricing.pricing(id="pricing")
+          include ../modules/pricing
+        section.main__video.video
+          include ../modules/video
+        section.main__reviews.reviews
+          include ../modules/reviews
+        section.main__download.download(id="download")
+          include ../modules/download
+      include ../modules/footer
 
     script(src="js/glide.min.js")
     script(src="js/script.js")

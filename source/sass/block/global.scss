@@ -84,3 +84,21 @@ h1, h2, h3 {
   font-family: $font-accent;
   font-weight: 500;
 }
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+
+  @media (max-width: $desktop-width) {
+    width: 850px;
+  };
+
+  @media (max-width: $tablet-width) {
+    width: 555px;
+  };
+
+  @media (max-width: $mobile-width) {
+    width: 263px;
+  };
+}
