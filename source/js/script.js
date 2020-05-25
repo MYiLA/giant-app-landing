@@ -46,6 +46,35 @@ var sliderScreenshots = new Swiper ('.screenshots__slider', {
 
 sliderScreenshots.init();
 
+
+const reviewsSlider = new Glide('.reviews__glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 3,
+  focusAt: "center",
+  gap: 30,
+  autoplay: 6000,
+  hoverpause: true,
+  animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
+  dragThreshold: 50,
+  animationDuration: 1000,
+  breakpoints: {
+    1100: {
+      perView: 2
+    },
+
+    700: {
+      perView: 1
+    },
+
+    1400: {
+      perView: 1
+    }
+  },
+});
+
+reviewsSlider.mount();
+
 // скрытие лишних слайдов
 
 var screenshotSlides = $(".screenshots__slider .swiper-slide");

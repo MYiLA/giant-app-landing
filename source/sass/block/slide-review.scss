@@ -1,8 +1,28 @@
-.slide-review {}
+.slide-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 360px;
+  min-height: 100%;
 
-.slide-review__desc {}
+  padding-top: 40px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+}
 
-.slide-review__author {}
+.slide-review__desc {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
 
 @media (max-width: $desktop-width) {
 
