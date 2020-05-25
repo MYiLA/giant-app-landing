@@ -1,8 +1,15 @@
+.download {
+  background: $gradient;
+  background-color: rgb(253, 113, 44);
+}
+
 .download__title {}
 
 .download__list {}
 
-.download__item {}
+.download__item {
+  background-color: $white;
+}
 
 .download__link {}
 

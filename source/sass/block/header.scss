@@ -1,12 +1,28 @@
-.header {}
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
 
 .header__logo {
+  margin-right: 30px;
   img {}
 }
 
-.header__burger {}
+.header__burger {
+  display: none;
+}
 
-.header__nav {}
+.header__nav {
+  flex-grow: 1;
+}
 
 @media (max-width: $desktop-width) {
 

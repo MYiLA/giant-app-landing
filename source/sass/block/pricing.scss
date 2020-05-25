@@ -1,8 +1,45 @@
-.pricing__title {}
+.pricing {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
 
-.pricing__desc {}
+.pricing__title {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
 
-.pricing__price-item {}
+  text-align: center;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.pricing__desc {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pricing__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing__price-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(4n +4) {
+    margin-right: 0;
+  }
+}
 
 @media (max-width: $desktop-width) {
 

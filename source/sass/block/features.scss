@@ -1,8 +1,24 @@
-.visually-hidden {}
+.features {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #eeeeee;
+}
 
-.features__list {}
+.features__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.features__feature {}
+.features__feature {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 50px;
+
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
 
 @media (max-width: $desktop-width) {
 

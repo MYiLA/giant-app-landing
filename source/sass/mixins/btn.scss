@@ -1,26 +1,17 @@
 @mixin btn {
-  display: block;
-  width: 100%;
-  padding: 9px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border: none;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+
   font-family: $font-main;
-  background-color: $accent-color;
-  color: $white;
+
+  transition: background-color .4s;
   cursor: pointer;
 
   &:focus,
   &:hover {
     outline: none;
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

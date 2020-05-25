@@ -1,49 +1,64 @@
 @font-face {
-    font-family: 'Roboto'; 
-    src: url('../fonts/roboto-300-light.woff2') format('woff2'),
+  font-family: 'Roboto'; 
+  src: 
+    url('../fonts/roboto-300-light.woff2') format('woff2'),
     url('../fonts/roboto-300-light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto'; 
-  src: url('../fonts/roboto-400-regular.woff2') format('woff2'),
-  url('../fonts/roboto-400-regular.woff') format('woff');
+  src: 
+    url('../fonts/roboto-400-regular.woff2') format('woff2'),
+    url('../fonts/roboto-400-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto'; 
-  src: url('../fonts/roboto-500-medium.woff2') format('woff2'),
-  url('../fonts/roboto-500-medium.woff') format('woff');
+  src: 
+  url('../fonts/roboto-600-bold.woff2') format('woff2'),
+  url('../fonts/roboto-600-bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis'; 
+  src: 
+    url('../fonts/dosis-400-regular.woff2') format('woff2'),
+    url('../fonts/dosis-400-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis'; 
+  src:
+    url('../fonts/dosis-500-medium.woff2') format('woff2'),
+    url('../fonts/dosis-500-medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Dosis'; 
-  src: url('../fonts/dosis-400-regular.woff2') format('woff2'),
-  url('../fonts/dosis-400-regular.woff') format('woff');
-  font-weight: 400;
+  src:
+    url('../fonts/dosis-600-semibold.woff2') format('woff2'),
+    url('../fonts/dosis-600-semibold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-font-family: 'Dosis'; 
-src: url('../fonts/dosis-500-medium.woff2') format('woff2'),
-url('../fonts/dosis-500-medium.woff') format('woff');
-font-weight: 500;
-font-style: normal;
-}
-
-@font-face {
-font-family: 'Dosis'; 
-src: url('../fonts/dosis-600-semibold.woff2') format('woff2'),
-url('../fonts/dosis-600-semibold.woff') format('woff');
-font-weight: 600;
-font-style: normal;
+  font-family: 'Dosis'; 
+  src:
+    url('../fonts/dosis-700-bold.woff2') format('woff2'),
+    url('../fonts/dosis-700-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 html, body {
@@ -101,4 +116,14 @@ h1, h2, h3 {
   @media (max-width: $mobile-width) {
     width: 263px;
   };
+}
+
+.opacity {
+  &--0 {
+    opacity: 0;
+  }
+  
+  &--1 {
+    opacity: 1;
+  }
 }
