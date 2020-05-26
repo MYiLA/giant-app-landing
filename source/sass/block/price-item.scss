@@ -2,7 +2,7 @@
   width: 262px;
   position: relative;
   background-color: #f7fafc;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-right: 25px;
   padding-bottom: 40px;
   padding-left: 25px;
@@ -15,14 +15,13 @@
     background-color: $white;
     box-shadow: 0 10px 40px 5px rgba(0, 0, 0, .1);
     .price-item__wrap-price {
-
       .price-item__wrap-num {
         color: $white;
       }
+    }
 
-      svg {
-        fill: url(#icon-gradient);
-      }
+    .icon-opacity {
+      opacity: 1;
     }
 
     .price-item__btn-buy {
@@ -44,7 +43,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #333333;
 }
 
@@ -63,7 +62,7 @@
 .price-item__wrap-num {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 54%;
   transform: translate(-50%, -50%);
   font-family: $font-accent;
   color: #333333;
@@ -87,15 +86,15 @@
 }
 
 .price-item__list {
-  padding-top: 150px;
-  margin-bottom: 40px;
+  padding-top: 154px;
+  margin-bottom: 38px;
 }
 
 .price-item__item {
   text-align: center;
   border-bottom: 1px dashed #eeeeee;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 32px;
 
   &:nth-last-child(1) {
     border: none;
@@ -110,15 +109,22 @@
   font-size: 14px;
   line-height: 24px;
   color: #aaaaaa;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .price-item__btn-buy {
   @include btn;
 
   border: 1px solid #eeeeee;
+  padding-top: 7px;
+  padding-left: 42px;
+  padding-right: 42px;
+  margin-left: 9px;
+
   background-color: $white;
   font-weight: 600;
+  font-size: 14px;
+
 
   transition: 
     background-image .4s,

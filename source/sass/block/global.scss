@@ -127,3 +127,12 @@ h1, h2, h3 {
     opacity: 1;
   }
 }
+
+.icon-opacity {
+  opacity: 0.0;
+  display: inline-block;
+  -webkit-transition: opacity .4s ease;
+  -moz-transition: opacity .4s ease;
+  -o-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}

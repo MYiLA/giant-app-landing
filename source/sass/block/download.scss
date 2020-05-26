@@ -1,6 +1,6 @@
 .download {
-  padding-top: 118px;
-  padding-bottom: 119px;
+  padding-top: 122px;
+  padding-bottom: 90px;
   background: $gradient;
   background-color: rgb(253, 113, 44);
 }
@@ -8,7 +8,7 @@
 .download__title {
   max-width: 360px;
   margin: 0 auto;
-  margin-bottom: 85px;
+  margin-bottom: 91px;
 
   font-weight: 500;
   font-size: 36px;
@@ -39,8 +39,8 @@
   display: flex;
 
   &:hover, &:focus {
-    svg:nth-child(1) {
-      fill: url(#icon-gradient);
+    .icon-opacity {
+      opacity: 1.0;
     }
   }
 }
@@ -59,8 +59,8 @@
 
   svg:nth-child(1) {
     position: absolute;
-    fill: #777777;
-    transition: fill .4s;
+    // fill: #777777;
+    // transition: fill .4s;
   }
 
   svg:nth-child(2) {

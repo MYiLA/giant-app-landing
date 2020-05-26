@@ -19,7 +19,7 @@
 
     background-image: url(../img/hover/iphones.png);
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: top 85% right;
     background-size: 100% auto;
   }
 }
@@ -31,7 +31,7 @@
 .hover__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: $font-accent;
   font-weight: 600;
   font-size: 54px;
@@ -41,7 +41,7 @@
 
 .hover__desc {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   padding: 0;
   color: $white;
   font-weight: 300;
@@ -50,7 +50,7 @@
 }
 
 .hover__list {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 
 .hover__item {
@@ -69,8 +69,8 @@
 .hover__btn {
   @include btn;
 
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   border: none;
   background-color: $white;

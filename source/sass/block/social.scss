@@ -1,11 +1,31 @@
 .social {}
 
-.social__list {}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-.social__item {}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 30px;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
 
 .social__link {
-  i {}
+  color: $white;
+  transition: color .4s;
+
+  &:hover,
+  &:focus {
+    color: #f31f79;
+  }
 }
 
 @media (max-width: $desktop-width) {

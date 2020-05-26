@@ -4,8 +4,13 @@ ul.pricing__list
   li.pricing__price-item.price-item
     span.price-item__type Basic
     .price-item__wrap-price
-      svg(width="262" height="120")
-        use(xlink:href="#icon-price-billet")
+      svg(width="262" height="120" xmlns="http://www.w3.org/2000/svg")
+        defs
+          mask#price-billet-mask
+            path(d="M683,3237H945v80l-130.522,40L683,3317v-80Z" transform="translate(-683 -3237)" fill="white")
+        g(mask='url(#price-billet-mask)')
+          rect(x='0', y='0', width='270', height='150', fill='white')
+          rect.icon-opacity(x='0', y='0', width='270', height='150', fill='url(#icon-gradient)')
       .price-item__wrap-num
         span.price-item__currency $
         span.price-item__num 12.0
@@ -21,8 +26,10 @@ ul.pricing__list
   li.pricing__price-item.price-item
     span.price-item__type Standard
     .price-item__wrap-price
-      svg(width="262" height="120")
-        use(xlink:href="#icon-price-billet")
+      svg(width="262" height="120" xmlns="http://www.w3.org/2000/svg")
+        g(mask='url(#price-billet-mask)')
+          rect(x='0', y='0', width='270', height='150', fill='white')
+          rect.icon-opacity(x='0', y='0', width='270', height='150', fill='url(#icon-gradient)')
       .price-item__wrap-num
         span.price-item__currency $
         span.price-item__num 24.0
@@ -38,8 +45,10 @@ ul.pricing__list
   li.pricing__price-item.price-item
     span.price-item__type Premium
     .price-item__wrap-price
-      svg(width="262" height="120")
-        use(xlink:href="#icon-price-billet")
+      svg(width="262" height="120" xmlns="http://www.w3.org/2000/svg")
+        g(mask='url(#price-billet-mask)')
+          rect(x='0', y='0', width='270', height='150', fill='white')
+          rect.icon-opacity(x='0', y='0', width='270', height='150', fill='url(#icon-gradient)')
       .price-item__wrap-num
         span.price-item__currency $
         span.price-item__num 250.0
@@ -55,8 +64,10 @@ ul.pricing__list
   li.pricing__price-item.price-item
     span.price-item__type Enterprise
     .price-item__wrap-price
-      svg(width="262" height="120")
-        use(xlink:href="#icon-price-billet")
+      svg(width="262" height="120" xmlns="http://www.w3.org/2000/svg")
+        g(mask='url(#price-billet-mask)')
+          rect(x='0', y='0', width='270', height='150', fill='white')
+          rect.icon-opacity(x='0', y='0', width='270', height='150', fill='url(#icon-gradient)')
       .price-item__wrap-num
         span.price-item__currency $
         span.price-item__num 999.0

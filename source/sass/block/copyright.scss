@@ -1,6 +1,14 @@
-.copyright {}
+.copyright__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  transition: color .4s;
 
-.copyright__link {}
+  &:hover,
+  &:focus {
+    color: #fd712c;
+  }
+}
 
 @media (max-width: $desktop-width) {
 

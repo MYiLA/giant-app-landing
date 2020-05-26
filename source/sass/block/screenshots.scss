@@ -1,6 +1,6 @@
 .screenshots {
   background-color: #f7fafc;
-  padding-top: 120px;
+  padding-top: 116px;
   padding-bottom: 40px;
 }
 
@@ -10,8 +10,8 @@
 
 .screenshots__title {
   max-width: 670px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
 
   text-align: center;
   font-weight: 600;
@@ -22,8 +22,8 @@
 .screenshots__desc {
   max-width: 670px;
   font-weight: 300;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-bottom: -2px;
 
   text-align: center;
   font-size: 14px;
@@ -42,8 +42,8 @@
     width: auto;
     height: auto;
     background: none;    
-    right: -70px;
-    top: 48%;
+    right: -90px;
+    top: 47%;
   }
 
   .swiper-button-prev {
@@ -52,8 +52,8 @@
     width: auto;
     height: auto;
     background: none;
-    left: -70px;
-    top: 48%;
+    left: -90px;
+    top: 47%;
   }
 }
 

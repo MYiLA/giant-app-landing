@@ -1,0 +1,24 @@
+<svg width="96px" height="96px" viewbox="-5 0 80 69.87" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(253, 113, 44);stop-opacity:1;"></stop>
+      <stop offset="100%" style="stop-color:rgb(242, 23, 128);stop-opacity:1;"></stop>
+    </linearGradient>
+    <clipPath id="clip-path" transform="translate(-2125 -2124.97)">
+      <rect x="2125" y="2125" width="69.84" height="69.97" style="fill:none"></rect>
+    </clipPath>
+    <mask id="icon-windows-mask" maskunits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <path d="M2125,2185.23l28.64,3.94v-27.33H2125Zm0,0" transform="translate(-2125 -2124.97)" fill="white"></path>
+      <g clip-path="url(#clip-path)">
+        <path d="M2125,2158.31h28.64v-27.67l-28.64,4Zm0,0" transform="translate(-2125 -2124.97)" fill="white"></path>
+        <path d="M2156.79,2189.59l38.08,5.25v-33h-38.08Zm0,0" transform="translate(-2125 -2124.97)" fill="white"></path>
+        <path d="M2156.79,2158.31h38.08V2125l-38.08,5.25Zm0,0" transform="translate(-2125 -2124.97)" fill="white">
+        </path>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#icon-windows-mask)">
+    <rect x="0" y="0" width="90" height="90" fill="#777777"></rect>
+    <rect class="icon-opasity" x="0" y="0" width="90" height="90" fill="url(#icon-gradient)"></rect>
+  </g>
+</svg>
