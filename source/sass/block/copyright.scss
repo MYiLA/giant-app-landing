@@ -10,12 +10,11 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
-
+  .copyright__link {
+    font-size: 12px;
+    line-height: 20px;
+  }
 };
 
 @media (max-width: $mobile-width) {

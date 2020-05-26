@@ -79,11 +79,39 @@
 }
 
 @media (max-width: $desktop-width) {
-
+  .screenshots__slider {
+    .swiper-button-next { 
+      right: -100px;
+    }
+  
+    .swiper-button-prev {
+      left: -100px;
+    }
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .screenshots {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
 
+  .screenshots__slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .swiper-button-next { 
+      right: -50px;
+    }
+
+    .swiper-button-prev {
+      left: -50px;
+    }
+  }
+
+  .screenshots__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
 };
 
 @media (max-width: $mobile-width) {

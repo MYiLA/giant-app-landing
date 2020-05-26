@@ -15,9 +15,7 @@
 
 .nav__item {
   @include btn;
-  padding-top: 6px;
-  padding-bottom: 6px;
-
+  padding: 0;
   &:hover, &:focus {
     background-color: $white;
     outline: none;
@@ -29,10 +27,12 @@
 }
 
 .nav__link {
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight: 400;
   color: $white;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 32px;
 
   transition:
     font-weight .4s,
@@ -45,12 +45,29 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
+  .nav {
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
+  }
+  .nav__list {
+    display: block;
+    text-align: center;
+  }
 
+  .nav__item {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .nav__link {
+    display: block;
+    font-size: 14px;
+    line-height: 34px;
+  }
 };
 
 @media (max-width: $mobile-width) {

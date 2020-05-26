@@ -68,12 +68,10 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
-
+  .video__hover {
+    top: 50%;
+  }
 };
 
 @media (max-width: $mobile-width) {

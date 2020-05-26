@@ -125,7 +125,6 @@
   font-weight: 600;
   font-size: 14px;
 
-
   transition: 
     background-image .4s,
     background-color .4s,
@@ -143,12 +142,13 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
-
+  .price-item__item,
+  .price-item__btn-desc,
+  .price-item__btn-buy {
+    font-size: 12px;
+    line-height: 26px;
+  }
 };
 
 @media (max-width: $mobile-width) {

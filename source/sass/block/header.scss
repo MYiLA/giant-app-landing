@@ -24,12 +24,24 @@
   flex-grow: 1;
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .header__burger {
+    position: relative;
+    z-index: 5;
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
 };
 
 @media (max-width: $mobile-width) {

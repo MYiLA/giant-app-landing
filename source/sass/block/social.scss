@@ -1,6 +1,6 @@
-.social {}
+.socl {}
 
-.social__list {
+.socl__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.social__item {
+.socl__item {
   margin-right: 30px;
 
   &:nth-last-child(1) {
@@ -18,7 +18,7 @@
   }
 }
 
-.social__link {
+.socl__link {
   color: $white;
   transition: color .4s;
 

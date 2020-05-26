@@ -38,12 +38,16 @@
   color: #777777;
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
+  .feature__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
 
+  .feature__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
 };
 
 @media (max-width: $mobile-width) {

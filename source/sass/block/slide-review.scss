@@ -24,12 +24,11 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-};
-
 @media (max-width: $tablet-width) {
-
+  .slide-review__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
 };
 
 @media (max-width: $mobile-width) {

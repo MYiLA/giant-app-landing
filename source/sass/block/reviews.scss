@@ -64,24 +64,35 @@
 }
 
 .reviews__arrow {
-
   @include arrow;
-
-  &--left {
-    i{}
-  };
-
-  &--right {
-    i{}
-  };
 }
 
 @media (max-width: $desktop-width) {
-
+  .reviews__arrow-wrap {
+    width: 1000px;
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 
+  .reviews__desc {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .reviews__slide-review {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__arrow-wrap {
+    width: 655px;
+  }
 };
 
 @media (max-width: $mobile-width) {

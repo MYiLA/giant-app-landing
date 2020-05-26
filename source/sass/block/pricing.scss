@@ -42,11 +42,40 @@
 }
 
 @media (max-width: $desktop-width) {
+  .pricing__price-item {
+    &:nth-child(4n + 4) {
+      margin-right: 30px;
+    }
 
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .pricing {
+    padding-top: 80px;
+  }
 
+  .pricing__desc {
+    margin-bottom: 50px;
+  }
+
+  .pricing__price-item {
+    &:nth-child(3n + 3) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+  }
+
+  .pricing__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
 };
 
 @media (max-width: $mobile-width) {

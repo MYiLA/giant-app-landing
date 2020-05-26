@@ -91,14 +91,38 @@
   }
 }
 
-.hover__wrap {}
-
 @media (max-width: $desktop-width) {
+  .hover {
+    padding-bottom: 300px;
+    &::before {
+      content: "";
+      width: 65%;
+      background-position: top 100% right;
+      background-size: 110% auto;
+    }
+  }
+  
+  .hover__wrap {
+    width: 65%;
+  }
 
+  .hover__title {
+    font-size: 40px;
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .hover__desc,
+  .hover__item,
+  .hover__btn {
+    font-size: 12px;
+    line-height: 20px;
+  }
 
+  .hover__btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 };
 
 @media (max-width: $mobile-width) {

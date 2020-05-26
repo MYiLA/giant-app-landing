@@ -21,11 +21,26 @@
 }
 
 @media (max-width: $desktop-width) {
-
+  .features__feature {
+    width: 259px;
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .features {
+    padding-top: 80px;
+  }
 
+  .features__feature {
+  
+    &:nth-child(3n + 3) {
+      margin-right: 36px;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+  }
 };
 
 @media (max-width: $mobile-width) {

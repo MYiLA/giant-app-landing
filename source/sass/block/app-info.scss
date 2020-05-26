@@ -63,12 +63,6 @@
   }
 }
 
-.app-info__sub-wrap {}
-
-.app-info__desc {}
-
-.app-info__list {}
-
 .app-info__item {
   margin-bottom: 10px;
   font-weight: 500;
@@ -83,11 +77,54 @@
 }
 
 @media (max-width: $desktop-width) {
-
+  .app-info__img-wrap {
+    img {
+      right: -105%;
+    }
+  }
 };
 
 @media (max-width: $tablet-width) {
+  .app-info {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
 
+  .app-info__wrap {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &:nth-child(1) {
+      order: 1;
+      min-height: 550px;
+      padding-top: 50px;
+    }
+  }
+
+  .app-info__list {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .app-info__img-wrap {
+    position: static;
+    img {
+      height: 500px;
+      right: -50%;
+      top: auto;
+      bottom: 0x;
+    }
+  }
+
+  //шрифты
+
+  .app-info__desc,
+  .app-info__item {
+    font-size: 12px;
+    line-height: 20px;
+  }
 };
 
 @media (max-width: $mobile-width) {

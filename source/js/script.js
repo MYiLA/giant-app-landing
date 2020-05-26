@@ -59,15 +59,19 @@ const reviewsSlider = new Glide('.reviews__glide', {
   dragThreshold: 50,
   animationDuration: 1000,
   breakpoints: {
-    1100: {
+    1400: {
       perView: 2
     },
 
-    700: {
-      perView: 1
+    1100: {
+      perView: 1,
+      peek: {
+        before: 100,
+        after: 100
+      }
     },
 
-    1400: {
+    700: {
       perView: 1
     }
   },
@@ -79,6 +83,8 @@ reviewsSlider.mount();
 
 var screenshotSlides = $(".screenshots__slider .swiper-slide");
 var screenshotArrow = $(".screenshots__slider .screenshots__arrow");
+var mobileWidth = 695;
+var tabletWidth = 1095;
 
 var hiddenSlide = function (slide) {
   slide.removeClass("opacity--0");
@@ -100,9 +106,21 @@ var checkDepthSlider = function (slidesArr, depth) { // depth - всегда о�
   })
 }
 
+if ($(window).width() < mobileWidth) {
+  checkDepthSlider(screenshotSlides, -4);
+} else
+if ($(window).width() < tabletWidth) {
+  checkDepthSlider(screenshotSlides, -12);
+} else
 checkDepthSlider(screenshotSlides, -30);
 
 sliderScreenshots.on('slideChange', function () {
+  if ($(window).width() < mobileWidth) {
+    checkDepthSlider(screenshotSlides, -4);
+  } else
+  if ($(window).width() < tabletWidth) {
+    checkDepthSlider(screenshotSlides, -12);
+  } else
   checkDepthSlider(screenshotSlides, -30);
 });
 
@@ -124,6 +142,15 @@ $(document).ready(function () {
         scrollTop: ($(hash).offset().top) - 100
       }, 800);
     }
+  });
+});
+
+//анимация бургера
+$(document).ready(function () {
+  $('.header__burger').on('click', function () {
+    $('.animated-icon1').toggleClass('open');
+    $('.header__nav').toggleClass('show-menu');
+    
   });
 });
 
