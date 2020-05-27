@@ -47,15 +47,17 @@
     <header class="header">
         <div class="header__wrap wrap">
             <div class="header__logo"><img src="./img/header/logo.png" alt="logo Giant" width="128" height="42"></div>
-            <button class="header__burger" type="button" aria-label="close or open the navigation menu"><span class="animated-icon1"><span></span><span></span><span></span></span></button>
-            <nav class="header__nav nav navbar-collapse">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#download">Download Now</a></li>
-                </ul>
-            </nav>
+            <div class="header__nav-wrap">
+                <button class="header__burger" type="button" aria-label="close or open the navigation menu"><span class="animated-icon1"><span></span><span></span><span></span></span></button>
+                <nav class="header__nav nav navbar-collapse">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#download">Download Now</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -74,8 +76,8 @@
             </div>
         </section>
         <div class="wrap">
-            <section class="main__features features" id="features">
-                <h2 class="visually-hidden">our advantage</h2>
+            <section class="main__features features">
+                <h2 class="visually-hidden" id="features">our advantage</h2>
                 <ul class="features__list">
                     <li class="features__feature feature"><span class="feature__icon"><i class="fa fa-tags"></i></span>
                         <div class="feature__wrap">
@@ -173,8 +175,8 @@
             </div>
         </section>
         <div class="wrap">
-            <section class="main__pricing pricing" id="pricing">
-                <h2 class="pricing__title">We've got the perfect package for you</h2>
+            <section class="main__pricing pricing">
+                <h2 class="pricing__title" id="pricing">We've got the perfect package for you</h2>
                 <p class="pricing__desc">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
                 <ul class="pricing__list">
                     <li class="pricing__price-item price-item"><span class="price-item__type">Basic</span>
@@ -271,10 +273,11 @@
         </div>
         <section class="main__video video">
             <div class="video__wrap-hover">
+                <h2 class="visually-hidden">Video</h2>
                 <button class="video__play" type="button" aria-label="play video"><i class="fa fa-play"></i></button><img class="video__hover" src="./img/video/bg.jpg" alt="hover for video">
             </div>
             <div class="video__wrap-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/a3tQWMhRVXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a3tQWMhRVXI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
         </section>
         <div class="wrap">
@@ -331,8 +334,8 @@
                 </div>
             </section>
         </div>
-        <section class="main__download download" id="download">
-            <div class="download__wrap wrap">
+        <section class="main__download download">
+            <div class="download__wrap wrap" id="download">
                 <h2 class="download__title">Download Giant App Now</h2>
                 <ul class="download__list">
                     <li class="download__item"><a class="download__link" href="#">
@@ -340,8 +343,8 @@
                                 <svg width="60" height="60" viewbox="0 -20 298.01 400" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <mask id="icon-apple-mask">
-                                            <path d="M2229.82,1977.33h2.56c2,25.79-7.74,45.07-19.74,59-11.68,13.81-27.75,27.27-53.78,25.25-1.72-25.41,8.17-43.26,20.07-57.23,11.06-12.92,31.36-24.44,50.89-27Zm0,0" transform="translate(-2010.42 -1977.33)" style="fill-rule:evenodd;" fill="white"></path>
-                                            <path d="M2308.43,2245.63v.78A212.62,212.62,0,0,1,2278,2305c-11.59,16-25.86,37.46-51.26,37.46-21.88,0-36.44-14.1-58.94-14.5-23.83-.38-36.92,11.84-58.63,14.89h-7.44c-16-2.35-28.86-15-38.25-26.33-27.67-33.71-49.08-77.21-53.07-132.85v-16.4c1.72-39.81,21-72.25,46.79-87.92,13.57-8.33,32.23-15.46,53-12.33,8.92,1.43,18,4.48,26,7.45,7.52,3,17,8.09,25.92,7.85,6.13-.17,12.16-3.38,18.28-5.56,17.86-6.52,35.42-13.89,58.64-10.44,27.81,4.24,47.57,16.54,59.71,35.66-23.52,15-42.1,37.56-39,76.05,2.81,35,23.2,55.48,48.6,67.56Zm0,0" transform="translate(-2010.42 -1977.33)" style="fill-rule:evenodd" fill="white"></path>
+                                            <path d="M2229.82,1977.33h2.56c2,25.79-7.74,45.07-19.74,59-11.68,13.81-27.75,27.27-53.78,25.25-1.72-25.41,8.17-43.26,20.07-57.23,11.06-12.92,31.36-24.44,50.89-27Zm0,0" transform="translate(-2010.42 -1977.33)" fill="white"></path>
+                                            <path d="M2308.43,2245.63v.78A212.62,212.62,0,0,1,2278,2305c-11.59,16-25.86,37.46-51.26,37.46-21.88,0-36.44-14.1-58.94-14.5-23.83-.38-36.92,11.84-58.63,14.89h-7.44c-16-2.35-28.86-15-38.25-26.33-27.67-33.71-49.08-77.21-53.07-132.85v-16.4c1.72-39.81,21-72.25,46.79-87.92,13.57-8.33,32.23-15.46,53-12.33,8.92,1.43,18,4.48,26,7.45,7.52,3,17,8.09,25.92,7.85,6.13-.17,12.16-3.38,18.28-5.56,17.86-6.52,35.42-13.89,58.64-10.44,27.81,4.24,47.57,16.54,59.71,35.66-23.52,15-42.1,37.56-39,76.05,2.81,35,23.2,55.48,48.6,67.56Zm0,0" transform="translate(-2010.42 -1977.33)" fill="white"></path>
                                         </mask>
                                     </defs>
                                     <g mask="url(#icon-apple-mask)">
@@ -413,12 +416,12 @@
         <footer class="footer">
             <div class="footer__wrap wrap">
                 <div class="footer__socl socl">
-                    <div class="socl__list">
+                    <ul class="socl__list">
                         <li class="socl__item"><a class="socl__link" href="#" aria-label="go to us on facebook"><i class="fab fa-facebook-f"></i></a></li>
                         <li class="socl__item"><a class="socl__link" href="#" aria-label="go to us on twitter"><i class="fab fa-twitter"></i></a></li>
                         <li class="socl__item"><a class="socl__link" href="#" aria-label="go to us on dribbble"><i class="fab fa-dribbble"></i></a></li>
                         <li class="socl__item"><a class="socl__link" href="#" aria-label="go to us on behance"><i class="fab fa-behance"></i></a></li>
-                    </div>
+                    </ul>
                 </div>
                 <div class="footer__copyright copyright"><a class="copyright__link" href="#">Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</a></div>
             </div>
