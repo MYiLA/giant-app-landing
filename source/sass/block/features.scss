@@ -44,5 +44,18 @@
 };
 
 @media (max-width: $mobile-width) {
+  .features__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 
+  .features__feature {
+    margin-right: 0;
+    margin-bottom: 50px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
 };

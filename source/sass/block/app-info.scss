@@ -64,6 +64,7 @@
 }
 
 .app-info__item {
+  display: flex;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 14px;
@@ -72,6 +73,7 @@
   i {
     font-size: 16px;
     margin-right: 20px;
+    padding-top: 5px;
     color: #222222;
   }
 }
@@ -118,7 +120,10 @@
     }
   }
 
-  //шрифты
+  .app-info__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
 
   .app-info__desc,
   .app-info__item {
@@ -128,5 +133,34 @@
 };
 
 @media (max-width: $mobile-width) {
+  .app-info {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+  }
 
+  .app-info__wrap {
+    width: auto;
+    
+
+    &:nth-child(1) {
+      min-height: 450px;
+    }
+  }
+
+  .app-info__img-wrap {
+    img {
+      height: 370px;
+      right: -225px;
+      top: 70px;
+    }
+  }
 };
+
+@media (max-width: 400px) {
+  .app-info__img-wrap {
+    img {
+      right: -105%;
+    }
+  }
+}

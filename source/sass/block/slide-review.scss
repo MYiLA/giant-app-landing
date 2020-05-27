@@ -24,6 +24,10 @@
   }
 }
 
+.slide-review__author {
+  margin: 0;
+}
+
 @media (max-width: $tablet-width) {
   .slide-review__desc {
     font-size: 12px;
@@ -32,5 +36,12 @@
 };
 
 @media (max-width: $mobile-width) {
+  .slide-review__author {
+    order: -1;
+    margin-bottom: 35px;
+  }
 
+  .slide-review__desc {
+    text-align: center;
+  }
 };

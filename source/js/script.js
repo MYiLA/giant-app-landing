@@ -24,24 +24,6 @@ var sliderScreenshots = new Swiper ('.screenshots__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // breakpoints: {
-  //   // // when window width is >= 320px
-  //   // 700: {
-  //   //   slidesPerView: 2,
-  //   //   spaceBetween: 20
-  //   // },
-  //   // // when window width is >= 480px
-  //   // 1100: {
-  //   //   slidesPerView: 3,
-  //   //   spaceBetween: 30
-  //   // },
-  //   // // when window width is >= 640px
-  //   // 1400: {
-  //   //   slidesPerView: 4,
-  //   //   spaceBetween: 40
-  //   // }
-  // }
 })
 
 sliderScreenshots.init();
@@ -68,11 +50,23 @@ const reviewsSlider = new Glide('.reviews__glide', {
       peek: {
         before: 100,
         after: 100
-      }
+      },
     },
 
-    700: {
-      perView: 1
+    600: {
+      perView: 1,
+      peek: {
+        before: 60,
+        after: 60
+      },
+    },
+
+    480: {
+      perView: 1,
+      peek: {
+        before: 10,
+        after: 10
+      },
     }
   },
 });
@@ -106,22 +100,10 @@ var checkDepthSlider = function (slidesArr, depth) { // depth - всегда о�
   })
 }
 
-if ($(window).width() < mobileWidth) {
-  checkDepthSlider(screenshotSlides, -4);
-} else
-if ($(window).width() < tabletWidth) {
-  checkDepthSlider(screenshotSlides, -12);
-} else
-checkDepthSlider(screenshotSlides, -30);
+$(window).width() < tabletWidth ? checkDepthSlider(screenshotSlides, -12) : checkDepthSlider(screenshotSlides, -30);
 
 sliderScreenshots.on('slideChange', function () {
-  if ($(window).width() < mobileWidth) {
-    checkDepthSlider(screenshotSlides, -4);
-  } else
-  if ($(window).width() < tabletWidth) {
-    checkDepthSlider(screenshotSlides, -12);
-  } else
-  checkDepthSlider(screenshotSlides, -30);
+  $(window).width() < tabletWidth ? checkDepthSlider(screenshotSlides, -12) : checkDepthSlider(screenshotSlides, -30);
 });
 
 $.each(screenshotArrow, function () {

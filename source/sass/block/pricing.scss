@@ -11,7 +11,7 @@
 
   text-align: center;
   font-size: 36px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: 600;
 }
 
@@ -58,6 +58,11 @@
     padding-top: 80px;
   }
 
+  .pricing__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
   .pricing__desc {
     margin-bottom: 50px;
   }
@@ -79,5 +84,25 @@
 };
 
 @media (max-width: $mobile-width) {
+  .pricing__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  };
 
+  .pricing__price-item {
+    margin-right: 0;
+    margin-bottom: 50px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+
+  .pricing__title,
+  .pricing__desc {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+  }
 };

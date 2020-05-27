@@ -111,6 +111,8 @@
 
   .download__title {
     margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .download__item {
@@ -137,4 +139,20 @@
 
 @media (max-width: $mobile-width) {
 
+  .download__title {
+    text-align: center;
+  }
+
+  .download__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .download__item {
+    margin-right: 0;
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
 };

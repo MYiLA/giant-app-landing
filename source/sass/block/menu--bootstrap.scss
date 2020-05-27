@@ -1,9 +1,7 @@
 @media (max-width: $tablet-width) {
     .navbar-collapse {
-        width: 225px;
+        width: 210px;
         position: absolute;
-        top: 30px;
-        right: 69px;
         transition:
             transform .6s,
             opacity .6s;

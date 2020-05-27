@@ -75,5 +75,8 @@
 };
 
 @media (max-width: $mobile-width) {
-
+  .video__hover {
+    width: auto;
+    height: 200%;
+  }
 };

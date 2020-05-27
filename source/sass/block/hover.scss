@@ -54,6 +54,7 @@
 }
 
 .hover__item {
+  display: flex;
   margin-bottom: 10px;
   color: $white;
   font-weight: 500;
@@ -63,6 +64,7 @@
   i {
     font-size: 16px;
     margin-right: 20px;
+    padding-top: 5px;
   }
 }
 
@@ -122,9 +124,25 @@
   .hover__btn {
     padding-left: 25px;
     padding-right: 25px;
+    font-weight: 600;
+    font-size: 14px;
   }
 };
 
 @media (max-width: $mobile-width) {
+  .hover {
+    &:before {
+      width: 85%;
+    }
+  }
 
+  .hover__wrap {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  .hover__desc {
+    display: block;
+    width: auto;
+  }
 };

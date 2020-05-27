@@ -18,9 +18,18 @@
 
 .header__burger {
   display: none;
+
+  &:hover,
+  &:focus {
+    .animated-icon1 {
+      span {
+        background-color: $black;
+      }
+    }
+  }
 }
 
-.header__nav {
+.header__nav-wrap {
   flex-grow: 1;
 }
 
@@ -30,7 +39,18 @@
     justify-content: space-between;
   }
 
+  .header__nav-wrap {
+    position: relative;
+  }
+
+  .header__nav {
+    top: -15px;
+    right: -13px;
+  }
+
   .header__burger {
+    margin-right: 0;
+    margin-left: auto;
     position: relative;
     z-index: 5;
     display: block;
@@ -45,5 +65,8 @@
 };
 
 @media (max-width: $mobile-width) {
+  .header__wrap {
+    width: auto;
+  }
 
 };
