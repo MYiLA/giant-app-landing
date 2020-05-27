@@ -15,7 +15,7 @@ html(lang="en")
     link(rel="icon" href="img/favicon.ico" type="image/x-icon")
 
 
-  body(id="home")
+  body#home
 
     svg(style="height: 0; width: 0; position: absolute; visibility: hidden")
       defs
@@ -51,21 +51,21 @@ html(lang="en")
         .wrap
           include ../modules/hover
       .wrap
-        section.main__features.features(id="features")
+        section.main__features.features
           include ../modules/features
         section.main__app-info.app-info
           include ../modules/app-info
       section.main__screenshots.screenshots
         include ../modules/screenshots
       .wrap
-        section.main__pricing.pricing(id="pricing")
+        section.main__pricing.pricing
           include ../modules/pricing
       section.main__video.video
         include ../modules/video
       .wrap
         section.main__reviews.reviews
           include ../modules/reviews
-      section.main__download.download(id="download")
+      section.main__download.download
         include ../modules/download
       include ../modules/footer
 

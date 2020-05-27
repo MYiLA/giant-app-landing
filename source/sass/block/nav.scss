@@ -46,8 +46,17 @@
     padding: 25px;
     padding-top: 65px;
     padding-bottom: 30px;
-    background-color: rgba(255,255,255,.1);
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
+    background: linear-gradient(
+      45deg,
+      rgb(242, 23, 128) 0%,
+      rgb(242, 23, 128) 10%,
+      rgb(253, 113, 44) 89%,
+      rgb(253, 113, 44) 100%);
+    background-color: rgb(242, 23, 128);
+
+    border-radius: 20px;
+    // background-color: rgba(255,255,255,.8);
+    // box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
   }
   .nav__list {
     display: block;
@@ -81,16 +90,16 @@
 };
 
 @media (max-width: $mobile-width) {
-  .nav {
-    // background: $gradient;
-    background: linear-gradient(
-      45deg,
-      rgb(242, 23, 128) 0%,
-      rgb(242, 23, 128) 10%,
-      rgb(253, 113, 44) 89%,
-      rgb(253, 113, 44) 100%);
-    background-color: rgb(242, 23, 128);
+  // .nav {
+  //   // background: $gradient;
+  //   background: linear-gradient(
+  //     45deg,
+  //     rgb(242, 23, 128) 0%,
+  //     rgb(242, 23, 128) 10%,
+  //     rgb(253, 113, 44) 89%,
+  //     rgb(253, 113, 44) 100%);
+  //   background-color: rgb(242, 23, 128);
 
-    border-radius: 20px;
-  }
+  //   border-radius: 20px;
+  // }
 };
